@@ -3,6 +3,7 @@ export const initialState = {
   playlists: [],
   playing: false,
   item: null,
+  // token: null
   // Remove when Hosting the web-app, just a shortcut for Logging in
   token: 'BQCTNsSGXAqfKkCFq2RSe1H3a74wWwRIXvDWm_QypZJQaolzkvVsxylXpdVJaFSVMV9fd3_q1RV8HWJ3XWU0Vpxw05oS9VHnOpfVhQTrOcR4KZGXqA0jR-ENAiy9GTUdHCug7VVnqxTVk2STMtqLRORDEfIyVqQ5j_dvEANadNUExYFkRAAz'
 };
@@ -20,6 +21,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         token: action.token
+      }
+    case 'SET_PLAYLISTS':
+      return {
+        ...state,
+        playlists: action.playlists
       }
     default:
       return state;
