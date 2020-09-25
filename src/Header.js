@@ -6,7 +6,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import './Header.css';
 
 function Header() {
-  const [{ user }, dispatch] = useDataLayerValue();
+  const [{ user }] = useDataLayerValue();
 
   return (
     <div className='header'>
@@ -19,7 +19,7 @@ function Header() {
       </div>
 
       <div className="header__right">
-        <Avatar src={user?.images[0]} alt={user?.display_name} />
+        <Avatar src={user?.images[0].url} alt={user?.display_name} />
         <h4>{user?.display_name}</h4>
       </div>
     </div>
