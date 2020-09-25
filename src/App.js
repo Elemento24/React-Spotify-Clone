@@ -3,6 +3,7 @@ import SpotifyWebApi from 'spotify-web-api-js';
 
 import Login from './Login';
 import Player from './Player';
+import { useDataLayerValue } from './DataLayer';
 import { getTokenFromUrl } from './spotify';
 import './App.css';
 
