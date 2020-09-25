@@ -12,7 +12,7 @@ const scopes = [
 
 export const getTokenFromUrl = () => {
   return window.location.hash
-    .subtsring(1)
+    .substring(1)
     .split('&')
     .reduce((initial, item) => {
       // #accessToken=mysecretkey&name=sonny
