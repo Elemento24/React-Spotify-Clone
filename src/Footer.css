@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   bottom: 0;
-  height: 65px;
-  width: 97.5%;
+  height: 4vh;
+  width: 96.25%;
   background-color: #282828;
-  padding: 20px;
+  padding: 2vh 30px;
 }
 
 .footer__right * .MuiSlider-root {
